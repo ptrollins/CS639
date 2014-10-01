@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab2</string>
+    <string name="title">Cat</string>
+    <string name="action_settings">Settings</string>
+    <string name="botton_previous_text">PREV</string>
+    <string name="botton_next_text">NEXT</string>
+
+</resources>

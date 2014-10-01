@@ -1,6 +1,5 @@
-package com.ptrollins.myapplication;
+package com.ptrollins.lab2;
 
-import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,41 +10,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-import android.widget.Button;
-import android.widget.TextView;
 
 
-public class MyActivity extends ActionBarActivity {
+
+public class FirstActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_first);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-
-        final TextView firstTextView = (TextView) findViewById(R.id.textView);
-
-        Button firstButton = (Button) findViewById(R.id.firstButton);
-
-        firstButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                firstTextView.setText("You clicked.");
-
-            }
-        });
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.first, menu);
         return true;
     }
 
@@ -72,7 +57,7 @@ public class MyActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_my, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_first, container, false);
             return rootView;
         }
     }
