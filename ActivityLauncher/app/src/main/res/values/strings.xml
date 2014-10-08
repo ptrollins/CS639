@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivityLauncher</string>
+    <string name="strMain1">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="strLaunch">Launcher</string>
+    <string name="strSms">Text</string>
+    <string name="strTele">Phone</string>
+    <string name="strWeb">Browser</string>
+    <string name="strMap">Maps</string>
+    <string name="strShare">Share</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="strNew1">Hello again! This is a new activity.</string>
+    <string name="send_to">Share the love!</string>
+
+</resources>
