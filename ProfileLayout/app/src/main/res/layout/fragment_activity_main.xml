@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ActivityMain$PlaceholderFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/lrLClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class1"
+            android:id="@+id/txtClass1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class2"
+            android:id="@+id/txtClass2"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class3"
+            android:id="@+id/txtClass3"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgProfile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/lrLClasses"
+        android:layout_alignBottom="@id/lrLClasses"
+        android:src="@drawable/img"/>
+
+    <RelativeLayout
+        android:id="@+id/lrlName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgProfile"
+        android:layout_toEndOf="@id/imgProfile"
+        android:layout_toLeftOf="@id/lrLClasses"
+        android:layout_toStartOf="@id/lrLClasses"
+        android:layout_alignBottom="@id/imgProfile"
+        android:layout_alignTop="@id/imgProfile"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtFirstName"
+            android:text="@string/first_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:text="@string/last_name"
+            android:id="@+id/txtLastName"
+            android:layout_below="@id/txtFirstName"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

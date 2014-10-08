@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProfileLayout</string>
+    <string name="first_name">Preston</string>
+    <string name="last_name">Rollins</string>
+    <string name="class1">CS 610</string>
+    <string name="class2">CS 623</string>
+    <string name="class3">CS 639</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
