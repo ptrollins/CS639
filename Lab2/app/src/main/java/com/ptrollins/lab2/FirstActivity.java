@@ -1,5 +1,8 @@
 package com.ptrollins.lab2;
 
+import android.app.Activity;
+import android.content.Context;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -10,10 +13,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class FirstActivity extends ActionBarActivity {
+
+    private Button prevButton, nextButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,19 +55,73 @@ public class FirstActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void onNextButtonClick(View view) {
+
+
+
+    }
+
+    public void onPrevButtonClick(View view) {
+
+
+
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class PlaceholderFragment extends Fragment implements View.OnClickListener {
 
         public PlaceholderFragment() {
         }
 
+        View rootView;
+
+        int[] arrayImages = {R.drawable.angry_bird, R.drawable.dog, R.drawable.cat};
+        String[] arrayNames = {"Angry Bird", "Dog", "Cat"};
+        int index;
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_first, container, false);
+            rootView = inflater.inflate(R.layout.fragment_first, container, false);
+            index=1;
+            Button prev = (Button)rootView.findViewById(R.id.previousButton);
+            prev.setOnClickListener(this);
+
+            Button next = (Button)rootView.findViewById(R.id.nextButton);
+            next.setOnClickListener(this);
+
+            ((ImageView) rootView.findViewById(R.id.ivPet)).setImageResource(arrayImages[index]);
+            ((TextView) rootView.findViewById(R.id.textTitle)).setText(arrayNames[index]);
+
             return rootView;
+        }
+
+        @Override
+        public void onClick(View view) {
+
+            switch (view.getId()) {
+                case R.id.previousButton:
+                    if (index > 0) {
+                        index--;
+                        ((TextView) rootView.findViewById(R.id.textTitle)).setText(arrayNames[index]);
+                        ((ImageView) rootView.findViewById(R.id.ivPet)).setImageResource(arrayImages[index]);
+                    }
+                    else
+                        Toast.makeText(getActivity().getApplicationContext(), "There are no more pictures.", Toast.LENGTH_SHORT).show();
+                break;
+                case R.id.nextButton:
+                    if (index < (arrayImages.length - 1)){
+                        index++;
+                        ((TextView) rootView.findViewById(R.id.textTitle)).setText(arrayNames[index]);
+                        ((ImageView) rootView.findViewById(R.id.ivPet)).setImageResource(arrayImages[index]);
+                        }
+                    else
+                        Toast.makeText(getActivity().getApplicationContext(), "There are no more pictures.", Toast.LENGTH_SHORT).show();
+                break;
+            }
+
         }
     }
 }
