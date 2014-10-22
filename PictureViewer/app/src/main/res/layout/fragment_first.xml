@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity$PlaceholderFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:layout_alignBottom="@+id/nextButton"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:text="@string/botton_previous_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+
+        />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:text="@string/botton_next_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+       />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/previousButton"
+        android:layout_toLeftOf="@id/nextButton"
+        android:layout_alignBottom="@id/previousButton"
+        android:layout_alignTop="@id/previousButton"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/ivPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previousButton"
+        android:scaleType="fitCenter"
+
+        />
+
+</RelativeLayout>

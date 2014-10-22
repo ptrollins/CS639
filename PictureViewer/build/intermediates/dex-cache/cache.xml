@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/pre-dexed/debug/classes-b76d9eff63564640a219f567b41117129ea0abb2.jar"
+        jar="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/pre-dexed/debug/classes-6ff5ef4defdff5dd3bb2d381393f5708a2ca7517.jar"
+        jar="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-bfed4ee017b4bf81935c0899555b9d65f665ce60.jar"
+        jar="/Users/ptrollins/AndroidStudioProjects/CS639/PictureViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+
+</pre-dex-items>
