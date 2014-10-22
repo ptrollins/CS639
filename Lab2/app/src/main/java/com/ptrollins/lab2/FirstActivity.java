@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class FirstActivity extends ActionBarActivity {
 
-    private Button prevButton, nextButton;
+   // private Button prevButton, nextButton;
 
 
     @Override
@@ -55,17 +55,7 @@ public class FirstActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onNextButtonClick(View view) {
 
-
-
-    }
-
-    public void onPrevButtonClick(View view) {
-
-
-
-    }
 
     /**
      * A placeholder fragment containing a simple view.
@@ -77,22 +67,30 @@ public class FirstActivity extends ActionBarActivity {
 
         View rootView;
 
+        // array of images to display
         int[] arrayImages = {R.drawable.angry_bird, R.drawable.dog, R.drawable.cat};
+        // array of image names to populate textview
         String[] arrayNames = {"Angry Bird", "Dog", "Cat"};
+        // index for arrays
         int index;
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             rootView = inflater.inflate(R.layout.fragment_first, container, false);
-            index=1;
+
+            index=1; // set index to 1 to start at middle of three images
+
+            // Define previous button and ClickListener
             Button prev = (Button)rootView.findViewById(R.id.previousButton);
             prev.setOnClickListener(this);
-
+            // Define next button and ClickListener
             Button next = (Button)rootView.findViewById(R.id.nextButton);
             next.setOnClickListener(this);
 
+            // set ImageView to the image stored in the image array
             ((ImageView) rootView.findViewById(R.id.ivPet)).setImageResource(arrayImages[index]);
+            // set ImageView to the image stored in the image array
             ((TextView) rootView.findViewById(R.id.textTitle)).setText(arrayNames[index]);
 
             return rootView;
